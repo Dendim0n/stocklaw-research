@@ -14,6 +14,7 @@
       <a href="{{ .Site.Home.RelPermalink }}" class="nav-logo">StocKlaw</a>
       <div class="nav-links">
         <a href="{{ "signals/" | relURL }}">{{ if eq .Lang "en" }}Signals{{ else }}信号{{ end }}</a>
+        <a href="{{ "news/" | relURL }}">{{ if eq .Lang "en" }}News{{ else }}新闻{{ end }}</a>
         <a href="{{ "research/" | relURL }}">{{ if eq .Lang "en" }}Research{{ else }}研究{{ end }}</a>
         <a href="{{ "analysis/" | relURL }}">{{ if eq .Lang "en" }}Analysis{{ else }}分析{{ end }}</a>
         <a href="{{ "reviews/" | relURL }}">{{ if eq .Lang "en" }}Reviews{{ else }}评论{{ end }}</a>

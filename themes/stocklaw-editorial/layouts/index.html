@@ -26,6 +26,21 @@
   </section>
 
   <section class="home-section">
+    <h2 class="section-title">{{ if eq .Lang "en" }}Latest News{{ else }}最新新闻{{ end }}</h2>
+    <div class="post-list">
+      {{ range first 5 (where .Site.RegularPages "Section" "news") }}
+      <article class="post-card">
+        <div class="post-card-meta">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02 15:04" }}</time>
+        </div>
+        <h3 class="post-card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        {{ with .Params.description }}<p class="post-card-desc">{{ . }}</p>{{ end }}
+      </article>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="home-section">
     <h2 class="section-title">{{ if eq .Lang "en" }}Latest Analysis{{ else }}最新分析{{ end }}</h2>
     <div class="post-list">
       {{ range first 5 (where .Site.RegularPages "Section" "analysis") }}
