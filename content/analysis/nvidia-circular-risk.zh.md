@@ -1,4 +1,3 @@
-source: "待补充"
 ---
 title: "NVIDIA 循环融资风险分析"
 date: 2026-05-28

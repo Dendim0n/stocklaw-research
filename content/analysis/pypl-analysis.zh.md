@@ -1,4 +1,3 @@
-source: "待补充"
 ---
 title: "PayPal (PYPL) 分析"
 date: 2026-05-26

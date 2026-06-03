@@ -1,4 +1,3 @@
-source: "待补充"
 ---
 title: "医药板块分析 — PFE/REGN/ADBE"
 date: 2026-05-22
