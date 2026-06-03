@@ -5,9 +5,11 @@
   const resultsContainer = document.getElementById('search-results');
   if (!input || !resultsContainer) return;
 
-  // Determine lang from URL
-  const lang = window.location.pathname.startsWith('/en/') ? 'en' : 'zh';
-  const indexUrl = lang === 'en' ? '/en/index.json' : '/index.json';
+  // Determine lang and base path from URL
+  const path = window.location.pathname;
+  const lang = path.includes('/en/') ? 'en' : 'zh';
+  const base = path.substring(0, path.indexOf('/en/') !== -1 ? path.indexOf('/en/') : path.indexOf('/', 1)) || '';
+  const indexUrl = lang === 'en' ? base + '/en/index.json' : base + '/index.json';
 
   async function loadIndex() {
     if (searchIndex) return searchIndex;
