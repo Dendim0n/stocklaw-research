@@ -15,7 +15,7 @@ score: 7.5
 
 ## Part 1: Original Gemini Deep Research Report
 
-> The full Gemini Deep Research report, provided by kimi.
+> The full Gemini Deep Research report.
 
 ---
 

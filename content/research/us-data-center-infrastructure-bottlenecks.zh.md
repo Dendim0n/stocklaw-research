@@ -9,13 +9,13 @@ author: "StocKlaw"
 score: 7.5
 ---
 
-> 本文源于一则新闻：Tom's Hardware 报道称，由于电力短缺和中国部件限制，一半规划中的美国数据中心建设被延迟或取消。kimi 让 Gemini 做了 Deep Research 得到了一份报告，本文是对该报告的验证分析，以及在此基础上扩展寻找的其他受益标的。
+> 本文源于一则新闻：Tom's Hardware 报道称，由于电力短缺和中国部件限制，一半规划中的美国数据中心建设被延迟或取消。让 Gemini 做了 Deep Research 得到了一份报告，本文是对该报告的验证分析，以及在此基础上扩展寻找的其他受益标的。
 
 ---
 
 ## 第一部分：Gemini Deep Research 原文
 
-> 以下是 Gemini Deep Research 报告全文，由 kimi 提供。
+> 以下是 Gemini Deep Research 报告全文
 
 ---
 
