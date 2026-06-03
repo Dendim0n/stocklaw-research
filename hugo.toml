@@ -1,0 +1,48 @@
+baseURL = "https://dendim0n.github.io/stocklaw-research/"
+languageCode = "zh"
+defaultContentLanguage = "zh"
+title = "StocKlaw | 投研笔记"
+theme = "stocklaw-editorial"
+
+[pagination]
+  pagerSize = 20
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  stock = "stocks"
+
+[languages]
+  [languages.zh]
+    languageName = "中文"
+    weight = 1
+    title = "StocKlaw | 投研笔记"
+    description = "数据驱动的美股投研分析"
+  [languages.en]
+    languageName = "English"
+    weight = 2
+    title = "StocKlaw | Investment Research"
+    description = "Data-driven US equity research"
+
+[params]
+  dateFormat = "2006-01-02"
+  showReadingTime = true
+  showShareButtons = false
+  author = "StocKlaw"
+  description = "数据驱动的美股投研分析 | Data-driven US equity research"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[outputFormats.JSON]
+  mediaType = "application/json"
+  baseName = "index"
+  isPlainText = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "github"
+    lineNos = false

@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div class="list-page">
+  <header class="list-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </header>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="{{ if eq .Lang "en" }}Search articles...{{ else }}搜索文章...{{ end }}" />
+  </div>
+  <div class="post-list">
+    {{ range .Pages }}
+    <article class="post-card">
+      <div class="post-card-meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+        {{ with .Params.category }}<span class="post-category">{{ . }}</span>{{ end }}
+      </div>
+      <h2 class="post-card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      {{ with .Params.description }}<p class="post-card-desc">{{ . }}</p>{{ end }}
+      {{ with .Params.valuation }}<span class="valuation-badge valuation-{{ . }}">{{ . }}</span>{{ end }}
+      {{ with .Params.tags }}
+      <div class="post-card-tags">
+        {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
+      </div>
+      {{ end }}
+    </article>
+    {{ end }}
+  </div>
+  <div id="search-results" class="post-list" style="display:none;"></div>
+</div>
+{{ end }}

@@ -1,0 +1,31 @@
+{{ define "main" }}
+<article class="post">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+      {{ with .Params.category }}
+        <span class="post-category">{{ . }}</span>
+      {{ end }}
+    </div>
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{ with .Params.description }}
+      <p class="post-subtitle">{{ . }}</p>
+    {{ end }}
+    {{ with .Params.tags }}
+      <div class="post-tags">
+        {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
+      </div>
+    {{ end }}
+  </header>
+  <div class="post-content">
+    {{ .Content }}
+  </div>
+  {{ if .IsTranslated }}
+  <div class="lang-switch">
+    {{ range .Translations }}
+      <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+    {{ end }}
+  </div>
+  {{ end }}
+</article>
+{{ end }}

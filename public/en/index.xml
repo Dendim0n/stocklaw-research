@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>StocKlaw | Investment Research</title><link>https://kimi.github.io/en/</link><description>Recent content on StocKlaw | Investment Research</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 03 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://kimi.github.io/en/index.xml" rel="self" type="application/rss+xml"/><item><title>About StocKlaw</title><link>https://kimi.github.io/en/about/</link><pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate><guid>https://kimi.github.io/en/about/</guid><description>&lt;h2 id="what-is-this">What is this&lt;/h2>
+&lt;p>StocKlaw is a data-driven US equity research notebook. All analysis is based on publicly verifiable data and facts, not narratives or tips.&lt;/p>
+&lt;h2 id="content-categories">Content Categories&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Signals&lt;/strong> — Daily investment signals from Hacker News and GitHub&lt;/li>
+&lt;li>&lt;strong>Research&lt;/strong> — Portfolio research including AI moat, AI application, and growth screening&lt;/li>
+&lt;li>&lt;strong>Analysis&lt;/strong> — Individual stock deep dives and sector/theme studies&lt;/li>
+&lt;li>&lt;strong>Reviews&lt;/strong> — Data verification and commentary on investment articles&lt;/li>
+&lt;/ul>
+&lt;h2 id="methodology">Methodology&lt;/h2>
+&lt;ul>
+&lt;li>Every claim must have a verifiable numerical anchor&lt;/li>
+&lt;li>Cross-market signal verification&lt;/li>
+&lt;li>Scenario matrices, not point predictions&lt;/li>
+&lt;li>Honest uncertainty acknowledgment&lt;/li>
+&lt;/ul>
+&lt;h2 id="data-sources">Data Sources&lt;/h2>
+&lt;p>FRED, yfinance, SEC EDGAR, Finnhub, Google News, Hacker News, GitHub&lt;/p></description></item><item><title>Signal Daily 2026-06-03</title><link>https://kimi.github.io/en/signals/2026-06-03/</link><pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate><guid>https://kimi.github.io/en/signals/2026-06-03/</guid><description>&lt;h2 id="hn-picks">HN Picks&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Can the stockmarket swallow Anthropic, SpaceX and OpenAI?&lt;/strong> (256 pts) — The Economist analyzes the structural impact of three trillion-dollar IPOs on the market. Passive fund rebalancing pressure is the core risk.&lt;/li>
+&lt;li>&lt;strong>SpaceX S-1 Filing&lt;/strong> — SEC confirmed S-1, listing on NASDAQ June 12, ticker SPCX, valuation $1.75T.&lt;/li>
+&lt;/ul>
+&lt;h2 id="github-trending">GitHub Trending&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>searxng/searxng&lt;/strong> — Privacy-first metasearch engine aggregating Google/Bing/DuckDuckGo. +1.2k stars this week.&lt;/li>
+&lt;/ul>
+&lt;h2 id="signal-extraction">Signal Extraction&lt;/h2>
+&lt;ol>
+&lt;li>AI IPO concentration window — passive fund rebalancing may create selling pressure on existing tech giants&lt;/li>
+&lt;li>SpaceX + xAI merger at $1.75T valuation — monitor whether Starlink cash flow can sustain it&lt;/li>
+&lt;/ol></description></item></channel></rss>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="/index.xml">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="{{ .Site.Home.RelPermalink }}" class="nav-logo">StocKlaw</a>
+      <div class="nav-links">
+        <a href="/signals/">{{ if eq .Lang "en" }}Signals{{ else }}信号{{ end }}</a>
+        <a href="/research/">{{ if eq .Lang "en" }}Research{{ else }}研究{{ end }}</a>
+        <a href="/analysis/">{{ if eq .Lang "en" }}Analysis{{ else }}分析{{ end }}</a>
+        <a href="/reviews/">{{ if eq .Lang "en" }}Reviews{{ else }}评论{{ end }}</a>
+        <a href="/about/">{{ if eq .Lang "en" }}About{{ else }}关于{{ end }}</a>
+      </div>
+      <div class="nav-lang">
+        {{ if .IsTranslated }}
+          {{ range .Translations }}
+            <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+          {{ end }}
+        {{ else }}
+          {{ if eq .Lang "zh" }}
+            <a href="/en/">English</a>
+          {{ else }}
+            <a href="/">中文</a>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </nav>
+  <main class="main">
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 StocKlaw. {{ if eq .Lang "en" }}Data-driven investment research.{{ else }}数据驱动的投研笔记。{{ end }}</p>
+    </div>
+  </footer>
+  <script src="/js/search.js"></script>
+</body>
+</html>

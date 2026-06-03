@@ -1,0 +1,8 @@
+name = "stocklaw-editorial"
+license = "MIT"
+licenselink = "https://github.com/kimi/kimi.github.io/blob/main/LICENSE"
+description = "StocKlaw editorial theme for investment research"
+min_version = "0.147.0"
+
+[author]
+  name = "StocKlaw"
