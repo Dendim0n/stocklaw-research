@@ -146,5 +146,11 @@ GEV 是数据中心电力供应中确定性最高的标的——$1,630亿积压�
 
 ---
 
+### 数据核验说明
+
+- ⚠️ "积压订单 $1630亿" 来自 Gemini Deep Research 引用的 247wallst.com，未独立验证
+- ⚠️ "90% 产能锁定到 2030 年" 来自 Gemini Deep Research 引用的 BNP Paribas Exane 报告，未独立验证
+- ✅ 估值数据已通过 Longbridge/Yahoo Finance 实时数据验证
+
 *数据来源：Longbridge Securities, Yahoo Finance, Finnhub, 各公司财报*
 *分析日期：2026年6月3日*

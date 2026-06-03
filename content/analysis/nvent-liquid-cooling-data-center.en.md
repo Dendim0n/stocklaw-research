@@ -131,5 +131,10 @@ NVT is the accelerating growth player in liquid cooling connections. 26-28% reve
 
 ---
 
+### Data Verification Notes
+
+- ⚠️ "First $1B sales quarter, revenue guidance +26-28%" cited from Gemini Deep Research via SeekingAlpha — not independently verified
+- ✅ Valuation data (PE, PB, market cap, Forward PE, target price) verified via Longbridge/Yahoo Finance real-time data
+
 *Data sources: Longbridge Securities, Yahoo Finance, Finnhub, SeekingAlpha, Company filings*
 *Analysis date: June 3, 2026*

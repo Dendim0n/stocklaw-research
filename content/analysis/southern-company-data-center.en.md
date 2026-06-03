@@ -117,5 +117,10 @@ SO offers the highest dividend yield (3.36%) and lowest Forward PE (18.77x) amon
 
 ---
 
+### Data Verification Notes
+
+- ⚠️ "$81B capex plan, Georgia electricity bills surged 43%" cited from Gemini Deep Research via utilitydive.com, iccr.org — not independently verified
+- ✅ Valuation data (PE, PB, market cap, Forward PE, target price) verified via Longbridge/Yahoo Finance real-time data
+
 *Data sources: Longbridge Securities, Yahoo Finance, Finnhub, Company filings*
 *Analysis date: June 3, 2026*

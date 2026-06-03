@@ -161,5 +161,10 @@ NVT 是液冷连接方案领域的加速增长者，26-28% 营收增长指引和
 
 ---
 
-*数据来源：Longbridge Securities, Yahoo Finance, Finnhub, 各公司财报*
+### 数据核验说明
+
+- ⚠️ "首个 $10亿销售季度"、"营收指引增长 26-28%" 来自 Gemini Deep Research 引用的 SeekingAlpha，未独立验证
+- ✅ 估值数据已通过 Longbridge/Yahoo Finance 实时数据验证
+
+*数据来源：Longbridge Securities, Yahoo Finance, Finnhub, SeekingAlpha, 各公司财报*
 *分析日期：2026年6月3日*

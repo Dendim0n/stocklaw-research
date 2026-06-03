@@ -112,5 +112,10 @@ CEG is the core nuclear renaissance play. Microsoft's 20-year PPA provides rare 
 
 ---
 
+### Data Verification Notes
+
+- ⚠️ "TMI restart cost $1.6B, DOE $1B federal loan" cited from Gemini Deep Research via nucnet.org — not independently verified
+- ✅ Valuation data (PE, PB, market cap, Forward PE, target price) verified via Longbridge/Yahoo Finance real-time data
+
 *Data sources: Longbridge Securities, Yahoo Finance, Finnhub, Company filings*
 *Analysis date: June 3, 2026*

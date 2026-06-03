@@ -145,5 +145,10 @@ NEE 是数据中心电力供应中最稳健的标的之一——受监管公用�
 
 ---
 
+### 数据核验说明
+
+- ⚠️ "$670亿 Dominion 并购" 来自 Gemini Deep Research 引用的 theinvadingsea.com，未独立验证（可能是合并后市值而非交易价）
+- ✅ 估值数据已通过 Longbridge/Yahoo Finance 实时数据验证
+
 *数据来源：Longbridge Securities, Yahoo Finance, Finnhub, 各公司财报*
 *分析日期：2026年6月3日*

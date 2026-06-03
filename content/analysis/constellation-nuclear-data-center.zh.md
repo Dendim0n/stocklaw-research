@@ -148,5 +148,11 @@ CEG 是核电复兴的核心标的，微软 20 年 PPA 提供了罕见的确定�
 
 ---
 
+### 数据核验说明
+
+- ⚠️ "三哩岛重启成本 $16亿"、"DOE 联邦贷款 $10亿" 来自 Gemini Deep Research 引用的 nucnet.org，未独立验证
+- ⚠️ "FERC 豁免日期 2026-06-01" 来自 Gemini Deep Research 引用的 utilitydive.com，未独立验证
+- ✅ 估值数据已通过 Longbridge/Yahoo Finance 实时数据验证
+
 *数据来源：Longbridge Securities, Yahoo Finance, Finnhub, 各公司财报*
 *分析日期：2026年6月3日*

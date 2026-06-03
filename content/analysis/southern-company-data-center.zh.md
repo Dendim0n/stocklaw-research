@@ -130,5 +130,11 @@ SO 是数据中心电力供应中股息率最高的标的（3.36%），Forward P
 
 ---
 
+### 数据核验说明
+
+- ⚠️ "$810亿资本支出计划" 来自 Gemini Deep Research 引用的 utilitydive.com，未独立验证
+- ⚠️ "佐治亚州电费上涨 43%" 来自 Gemini Deep Research 引用的 iccr.org，未独立验证
+- ✅ 估值数据已通过 Longbridge/Yahoo Finance 实时数据验证
+
 *数据来源：Longbridge Securities, Yahoo Finance, Finnhub, 各公司财报*
 *分析日期：2026年6月3日*

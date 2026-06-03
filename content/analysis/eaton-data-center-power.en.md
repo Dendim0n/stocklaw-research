@@ -134,5 +134,10 @@ ETN is the most capable player in data center power infrastructure — full-stac
 
 ---
 
+### Data Verification Notes
+
+- ⚠️ "Q1 data center orders +240%" cited from Gemini Deep Research via news.alphastreet.com — not independently verified
+- ✅ Valuation data (PE, PB, market cap, Forward PE, target price) verified via Longbridge/Yahoo Finance real-time data
+
 *Data sources: Longbridge Securities, Yahoo Finance, Finnhub, Company filings*
 *Analysis date: June 3, 2026*

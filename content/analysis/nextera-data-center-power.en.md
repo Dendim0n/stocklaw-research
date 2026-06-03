@@ -115,5 +115,10 @@ NEE is one of the most stable data center power plays — regulated utility + re
 
 ---
 
+### Data Verification Notes
+
+- ⚠️ "$67B Dominion merger" cited from Gemini Deep Research via theinvadingsea.com — not independently verified
+- ✅ Valuation data (PE, PB, market cap, Forward PE, target price) verified via Longbridge/Yahoo Finance real-time data
+
 *Data sources: Longbridge Securities, Yahoo Finance, Finnhub, Company filings*
 *Analysis date: June 3, 2026*

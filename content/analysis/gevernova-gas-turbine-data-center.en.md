@@ -127,5 +127,10 @@ GEV is the most certain play in data center power supply — $163B backlog, mono
 
 ---
 
+### Data Verification Notes
+
+- ⚠️ "$163B backlog" cited from Gemini Deep Research via 247wallst.com — not independently verified
+- ✅ Valuation data (PE, PB, market cap, Forward PE, target price) verified via Longbridge/Yahoo Finance real-time data
+
 *Data sources: Longbridge Securities, Yahoo Finance, Finnhub, Company filings*
 *Analysis date: June 3, 2026*
