@@ -1,9 +1,11 @@
+source: "待补充"
 ---
 title: "The Trade Desk (TTD) 分析"
 date: 2026-05-26
 description: "The Trade Desk 程序化广告平台分析"
 tags: ["TTD", "广告", "程序化"]
 category: "stock"
+source: "待补充"
 ---
 
 ## 概况

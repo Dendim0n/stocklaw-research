@@ -1,9 +1,11 @@
+source: "待补充"
 ---
 title: "医药板块分析 — PFE/REGN/ADBE"
 date: 2026-05-22
 description: "医药板块核心标的基本面扫描"
 tags: ["医药", "PFE", "REGN", "ADBE"]
 category: "sector"
+source: "待补充"
 ---
 
 ## PFE（辉瑞）

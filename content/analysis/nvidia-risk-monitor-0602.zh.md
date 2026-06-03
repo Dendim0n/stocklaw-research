@@ -1,3 +1,4 @@
+source: "待补充"
 ---
 title: "NVIDIA 循环融资风险监控 — 2026-06-02"
 date: 2026-06-02
@@ -5,6 +6,7 @@ description: "NVIDIA 循环融资风险周度监控更新"
 tags: ["NVIDIA", "AI", "风险监控"]
 category: "stock"
 valuation: "偏贵"
+source: "待补充"
 ---
 
 ## 监控期间：2026-05-27 ~ 2026-06-02

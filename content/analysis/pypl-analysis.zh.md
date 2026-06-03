@@ -1,9 +1,11 @@
+source: "待补充"
 ---
 title: "PayPal (PYPL) 分析"
 date: 2026-05-26
 description: "PayPal 基本面与估值分析"
 tags: ["PYPL", "支付", "金融科技"]
 category: "stock"
+source: "待补充"
 ---
 
 ## 概况

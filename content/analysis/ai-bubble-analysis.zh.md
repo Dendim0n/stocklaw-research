@@ -1,3 +1,4 @@
+source: "待补充"
 ---
 title: "AI 泡沫深度分析"
 date: 2026-05-26
@@ -5,6 +6,7 @@ description: "当前 AI 投资热潮与历史泡沫的系统性对比"
 tags: ["AI", "泡沫", "估值", "科技股"]
 category: "sector"
 valuation: "偏贵"
+source: "待补充"
 ---
 
 ## 核心结论

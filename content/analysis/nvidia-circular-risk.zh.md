@@ -1,3 +1,4 @@
+source: "待补充"
 ---
 title: "NVIDIA 循环融资风险分析"
 date: 2026-05-28
@@ -5,6 +6,7 @@ description: "NVIDIA 客户用 NVIDIA 融资购买 NVIDIA GPU 的循环风险"
 tags: ["NVIDIA", "AI", "数据中心", "风险"]
 category: "stock"
 valuation: "偏贵"
+source: "待补充"
 ---
 
 ## 核心风险
