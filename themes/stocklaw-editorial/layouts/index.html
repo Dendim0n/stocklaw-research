@@ -1,8 +1,9 @@
 {{ define "main" }}
 <div class="home">
   <section class="hero">
-    <h1 class="hero-title">StocKlaw</h1>
-    <p class="hero-sub">{{ if eq .Lang "en" }}Data-driven US equity research notes.{{ else }}数据驱动的美股投研笔记。{{ end }}</p>
+    <p class="hero-greeting">StocKlaw</p>
+    <h1 class="hero-title">数据驱动的<br>美股投研笔记</h1>
+    <p class="hero-sub">Data-driven US equity research. 不靠叙事，不靠小道消息，只信数据和逻辑。</p>
   </section>
 
   <section class="home-search">
@@ -11,24 +12,9 @@
   </section>
 
   <section class="home-section">
-    <h2 class="section-title">{{ if eq .Lang "en" }}Latest Signals{{ else }}最新信号{{ end }}</h2>
-    <div class="post-list">
-      {{ range first 5 (where .Site.RegularPages "Section" "signals") }}
-      <article class="post-card">
-        <div class="post-card-meta">
-          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
-        </div>
-        <h3 class="post-card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-        {{ with .Params.description }}<p class="post-card-desc">{{ . }}</p>{{ end }}
-      </article>
-      {{ end }}
-    </div>
-  </section>
-
-  <section class="home-section">
     <h2 class="section-title">{{ if eq .Lang "en" }}Latest News{{ else }}最新新闻{{ end }}</h2>
     <div class="post-list">
-      {{ range first 5 (where .Site.RegularPages "Section" "news") }}
+      {{ range first 3 (where .Site.RegularPages "Section" "news") }}
       <article class="post-card">
         <div class="post-card-meta">
           <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02 15:04" }}</time>
@@ -41,9 +27,40 @@
   </section>
 
   <section class="home-section">
+    <h2 class="section-title">{{ if eq .Lang "en" }}Latest Signals{{ else }}最新信号{{ end }}</h2>
+    <div class="post-list">
+      {{ range first 3 (where .Site.RegularPages "Section" "signals") }}
+      <article class="post-card">
+        <div class="post-card-meta">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+        </div>
+        <h3 class="post-card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        {{ with .Params.description }}<p class="post-card-desc">{{ . }}</p>{{ end }}
+      </article>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="home-section">
+    <h2 class="section-title">{{ if eq .Lang "en" }}Latest Research{{ else }}最新研究{{ end }}</h2>
+    <div class="post-list">
+      {{ range first 3 (where .Site.RegularPages "Section" "research") }}
+      <article class="post-card">
+        <div class="post-card-meta">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+          {{ with .Params.category }}<span class="post-category">{{ . }}</span>{{ end }}
+        </div>
+        <h3 class="post-card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        {{ with .Params.description }}<p class="post-card-desc">{{ . }}</p>{{ end }}
+      </article>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="home-section">
     <h2 class="section-title">{{ if eq .Lang "en" }}Latest Analysis{{ else }}最新分析{{ end }}</h2>
     <div class="post-list">
-      {{ range first 5 (where .Site.RegularPages "Section" "analysis") }}
+      {{ range first 3 (where .Site.RegularPages "Section" "analysis") }}
       <article class="post-card">
         <div class="post-card-meta">
           <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
@@ -60,7 +77,7 @@
   <section class="home-section">
     <h2 class="section-title">{{ if eq .Lang "en" }}Latest Reviews{{ else }}最新评论{{ end }}</h2>
     <div class="post-list">
-      {{ range first 5 (where .Site.RegularPages "Section" "reviews") }}
+      {{ range first 3 (where .Site.RegularPages "Section" "reviews") }}
       <article class="post-card">
         <div class="post-card-meta">
           <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
