@@ -1,7 +1,7 @@
 ---
 title: "知乎文章分析：2026年6月4日A股行情——出海逻辑的重新定义"
 date: 2026-06-03
-description: "Deep Van关于A股"真正出海"与估值重构的分析验证"
+description: "Deep Van关于A股「真正出海」与估值重构的分析验证"
 tags: ["A股", "出海", "中欧贸易战", "AI产业链", "估值重构", "中际旭创", "通富微电"]
 category: "article-review"
 source: "https://www.zhihu.com/question/2044791072212222067/answer/2045529244449732295"
