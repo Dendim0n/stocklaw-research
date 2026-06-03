@@ -59,6 +59,12 @@ Key takeaways:
 
 **The window to copy Abel's trade has already closed.** You'd be buying at $79; he bought at $40-60. That's a 20%+ gap in cost basis and completely different risk profile. This isn't "following the Oracle" — it's riding his coattails at a much worse price.
 
+**Why Abel bought Delta:** The Iran war erupted in June 2025, sending oil prices soaring and airline demand crashing. DAL went from ~$70 to the $40s. Abel grabbed ~40M shares (~$2.6B) at an average cost of roughly $45-50 in Q1. The logic is simpler than "betting on Iran peace" — **a panic-driven selloff in a business that hadn't fundamentally broken. Bargain hunting.**
+
+**Current situation (June 2026):** US-Iran talks have been ongoing since February; oil has pulled back from its highs. Air travel demand is recovering — lower jet fuel costs are a direct tailwind. Abel's position is almost certainly sitting on significant unrealized gains.
+
+**But Buffett was right about the airline business:** "If a farsighted capitalist had been present at Kitty Hawk, he would have done his successors a huge favor by shooting Orville down." Airlines are structurally a terrible business — high fixed costs, massive capex, brutal price competition, extreme sensitivity to oil and macro. Abel's $2.6B Delta bet is more likely a **tactical opportunity** discussed with Buffett (buy the Iran-war panic), not a strategic pivot into airlines.
+
 ### ❌ Problematic or Questionable
 
 **1. "Abel betting on Iran easing" — too much narrative stretching.**
