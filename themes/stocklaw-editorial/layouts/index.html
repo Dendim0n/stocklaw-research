@@ -11,6 +11,25 @@
     <div id="search-results" class="post-list" style="display:none;"></div>
   </section>
 
+  <section class="home-featured">
+    <div class="featured-grid">
+      {{ range $cat := slice "news" "signals" "research" "analysis" "reviews" }}
+      {{ $pages := where $.Site.RegularPages "Section" $cat }}
+      {{ $page := index $pages 0 }}
+      {{ with $page }}
+      <div class="featured-card">
+        <div class="featured-card-meta">
+          <span class="featured-category">{{ if eq $cat "news" }}新闻{{ else if eq $cat "signals" }}信号{{ else if eq $cat "research" }}研究{{ else if eq $cat "analysis" }}分析{{ else }}评论{{ end }}</span>
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "01-02" }}</time>
+        </div>
+        <h3 class="featured-card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        {{ with .Params.description }}<p class="featured-card-desc">{{ . }}</p>{{ end }}
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </section>
+
   <section class="home-section">
     <h2 class="section-title">{{ if eq .Lang "en" }}Latest News{{ else }}最新新闻{{ end }}</h2>
     <div class="post-list">

@@ -11,21 +11,17 @@
     {{ with .Params.description }}
       <p class="post-subtitle">{{ . }}</p>
     {{ end }}
-    {{ with .Params.source }}
-    <div class="post-source">
-      <span class="source-label">{{ if eq $.Lang "en" }}Source{{ else }}来源{{ end }}:</span>
-      <a href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a>
+    <div class="post-meta-row">
+      {{ with .Params.source }}
+      <span class="post-source"><span class="source-label">{{ if eq $.Lang "en" }}Source{{ else }}来源{{ end }}:</span> <a href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a></span>
+      {{ end }}
+      {{ with .Params.author }}
+      <span class="post-author">{{ . }}</span>
+      {{ end }}
+      {{ with .Params.score }}
+      <span class="post-score"><span class="score-label">{{ if eq $.Lang "en" }}Score{{ else }}评分{{ end }}:</span> <span class="score-value">{{ . }}/10</span></span>
+      {{ end }}
     </div>
-    {{ end }}
-    {{ with .Params.author }}
-    <div class="post-author">{{ . }}</div>
-    {{ end }}
-    {{ with .Params.score }}
-    <div class="post-score">
-      <span class="score-label">{{ if eq $.Lang "en" }}Score{{ else }}评分{{ end }}:</span>
-      <span class="score-value">{{ . }}/10</span>
-    </div>
-    {{ end }}
     {{ with .Params.tags }}
       <div class="post-tags">
         {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
