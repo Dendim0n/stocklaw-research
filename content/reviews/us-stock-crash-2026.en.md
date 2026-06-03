@@ -34,6 +34,31 @@ The author "Time" analyzes Greg Abel's (Berkshire's new CEO) Q1 2026 13F filing 
 
 - Reuters reported May 15: SpaceX targeting June 12 Nasdaq listing under ticker SPCX, valuation ~$1.75T.
 
+**3. Real-time market data validates Abel's Delta play.**
+
+Pulled 30 daily candlesticks for DAL via moomoo. The price action tells the story cleanly:
+
+```
+  Bottom     04/29  $65.64 ← panic low (Iran war + oil shock)
+  Rebound    05/06  $73.15 ← talks news starts circulating
+  13F Filed  05/15  —      ← media breaks Abel's DAL buy
+  Breakout   05/20  $67.76→$74.12 ← massive 11.95M volume
+  Run to top 05/27  $83.75 ← peak
+  Pullback   Today  $79.37 ← ~5% off highs
+```
+
+DAL closed today around $79.37, intraday low/high $78.93/$79.89.
+
+Key takeaways:
+
+**Abel's cost basis is far below current price.** He bought in Q1 (Jan-Mar) when DAL was roughly $40-60 (the Iran-war airline crash). At $79 today, he's sitting on 30-50%+ unrealized gains. Executed well.
+
+**The market only reacted after the 13F disclosure.** 13F filed 5/15, breakout didn't happen until 5/20 — a 3-session lag. Even institutions needed confirmation before piling in.
+
+**The 5/27 peak at $83.75 was followed by a normal pullback.** From $66 to $84 in a month is a 27% move. A 5% retrace is healthy.
+
+**The window to copy Abel's trade has already closed.** You'd be buying at $79; he bought at $40-60. That's a 20%+ gap in cost basis and completely different risk profile. This isn't "following the Oracle" — it's riding his coattails at a much worse price.
+
 ### ❌ Problematic or Questionable
 
 **1. "Abel betting on Iran easing" — too much narrative stretching.**
@@ -65,7 +90,7 @@ The article's best feature is that it correctly reported Abel's 13F changes — 
 The author needed a unified narrative to explain all of Abel's moves, so they forced an "Iran peace" framework. More likely, Abel was running multiple independent plays:
 
 - **GOOGL:** AI thematic bet
-- **DAL:** Cyclical value (airlines crashed during Iran war)
+- **DAL:** Cyclical value (airlines crashed during Iran war) — live data shows Abel's cost ~$40-60, current $79, 30-50% unrealized gain
 - **CVX reduction:** Profit-taking after oil spike (not a bearish call on oil)
 - **AMZN/V/MA exits:** Portfolio simplification (42→29), possibly reflecting Todd Combs' departure
 
