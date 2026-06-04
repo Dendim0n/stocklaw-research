@@ -145,13 +145,13 @@ Google Cloud的积压订单（Backlog）在第一季度末达到了4620亿美元
 
 三个数据源给出三个不同的增速，但一致同意：TSLA 的 PEG 远超合理区间。无论用 20% 还是 8.3% 的增速，300x+ 的 PE 都是纯叙事定价。
 
-### 4. AI Capex ROI 研报的核心论据经得起验证
+### 4. AI Capex ROI 研报的三大论据全部独立验证通过
 
-研报给出的三个核心证据是真正有分量的：
+研报给出的三个核心证据，逐一经过独立信源验证：
 
-- **Google Cloud backlog $4620亿** — 这不是口头意向，是 SEC 定义的 RPO（有法律约束力的合同）。50% 在 24 个月内确认收入。这一条就够了。
-- **Meta Cash ROIC 52%** — 不卖算力，纯靠内部算法优化就拿到 52% 的现金回报率。这是对"AI 投入是浪费钱"论调最有力的反驳。
-- **Maia 200 降本 30%** — 微软自研芯片的战略意义不只是省钱，是从买方变成卖方。
+- **Google Cloud backlog $4620亿** ✅ — CRN 引用 Alphabet Q1 2026 财报原文确认："As of March 31, 2026, Google had $467 billion of remaining performance obligations—of which $462 billion was related to cloud." Cloud Wars 补充对比：Google Cloud $462B vs AWS $364B，Google 在积压订单上大幅领先。
+- **Meta Cash ROIC 52%** ✅ — Investing.com 引用 Meta Q4 2025 财报演示确认："The incremental return on invested capital for recent AI investments remains above 20%, with cash-based return on invested capital above 52%." 该文章同时确认了"AI-driven ad ranking produced roughly four times the revenue impact compared with simply increasing ad load"（研报的"4倍"说法）。注意：数据来自 Q4 2025，研报未注明时间口径。
+- **Maia 200 降本 30%** ✅ — The Register 引用微软云与 AI EVP Scott Guthrie 原话："Maia is 30 percent cheaper than any other AI silicon on the market today." 补充技术细节：TSMC 3nm 工艺，144B 晶体管，10 PFLOPS FP4 性能，216GB HBM3e 内存，7TB/s 带宽，750W 功耗（NVIDIA B200 超过 1200W）。
 
 ### 5. 历史对比框架清晰但有一个盲点
 

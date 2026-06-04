@@ -145,13 +145,13 @@ Root cause analysis:
 
 Three data sources give three different growth rates, but all agree: TSLA's PEG is far beyond reasonable. Whether using 20% or 8.3% growth, 300x+ PE is pure narrative pricing.
 
-### 4. AI Capex ROI: Report's Core Evidence Holds Up
+### 4. AI Capex ROI: All Three Core Claims Independently Verified
 
-The report's three core pieces of evidence are genuinely substantial:
+The report's three core pieces of evidence have been verified against independent sources:
 
-- **Google Cloud backlog $462 billion** — Not verbal intentions, but SEC-defined RPO (legally binding contracts). 50% converts to revenue within 24 months. This alone is sufficient.
-- **Meta Cash ROIC 52%** — Achieved without selling compute, purely through internal algorithm optimization. The strongest rebuttal to "AI spending is waste."
-- **Maia 200 cost reduction 30%** — Microsoft's self-developed chip's strategic significance isn't just cost savings — it's transitioning from buyer to seller.
+- **Google Cloud backlog $462 billion** ✅ — CRN quotes Alphabet's Q1 2026 earnings directly: "As of March 31, 2026, Google had $467 billion of remaining performance obligations—of which $462 billion was related to cloud." Cloud Wars adds: Google Cloud $462B vs AWS $364B, a massive lead in backlog.
+- **Meta Cash ROIC 52%** ✅ — Investing.com quotes Meta's Q4 2025 earnings presentation: "The incremental return on invested capital for recent AI investments remains above 20%, with cash-based return on invested capital above 52%." The same article confirms "AI-driven ad ranking produced roughly four times the revenue impact compared with simply increasing ad load" (the report's "4x" claim). Note: data is from Q4 2025; the report didn't specify the time period.
+- **Maia 200 cost reduction 30%** ✅ — The Register quotes Microsoft Cloud & AI EVP Scott Guthrie directly: "Maia is 30 percent cheaper than any other AI silicon on the market today." Technical details: TSMC 3nm process, 144B transistors, 10 PFLOPS FP4 performance, 216GB HBM3e memory, 7TB/s bandwidth, 750W TDP (vs NVIDIA B200 at 1,200W+).
 
 ### 5. Historical Comparison Framework: Clear but Has a Blind Spot
 
