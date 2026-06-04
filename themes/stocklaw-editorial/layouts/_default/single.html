@@ -76,29 +76,8 @@
     if (current) current.link.classList.add('active');
   }
 
-  // Prevent TOC from overlapping footer
-  const footer = document.querySelector('.footer');
-  const tocDefaultTop = 80;
-  const tocDefaultMaxH = window.innerHeight - 100;
-  function updateTocBounds() {
-    if (!footer) return;
-    const footerTop = footer.getBoundingClientRect().top;
-    const tocH = toc.offsetHeight;
-    const neededBottom = footerTop - 16;
-    const currentBottom = tocDefaultTop + tocH;
-    if (currentBottom > neededBottom) {
-      const newTop = Math.max(16, neededBottom - tocH);
-      toc.style.top = newTop + 'px';
-      toc.style.maxHeight = (footerTop - newTop - 16) + 'px';
-    } else {
-      toc.style.top = '';
-      toc.style.maxHeight = '';
-    }
-  }
-
-  window.addEventListener('scroll', () => { updateActive(); updateTocBounds(); }, { passive: true });
+  window.addEventListener('scroll', updateActive, { passive: true });
   updateActive();
-  updateTocBounds();
 })();
 </script>
 {{ end }}
