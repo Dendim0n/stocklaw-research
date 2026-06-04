@@ -475,6 +475,12 @@ img { max-width: 100%; height: auto; }
   padding-bottom: 1.5rem;
   border-bottom: 2px solid var(--text);
 }
+.list-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
 .list-header h1 {
   font-size: 1.75rem;
   font-weight: 800;
@@ -492,36 +498,32 @@ img { max-width: 100%; height: auto; }
   border-bottom: 1px solid var(--border);
 }
 .filter-search {
-  margin-bottom: 1rem;
-}
-.filter-controls {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 1rem;
+  margin-bottom: 0.75rem;
 }
 .filter-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.375rem;
-  flex: 1;
 }
 .filter-tag-btn {
   font-size: 0.75rem;
   font-family: var(--font-mono);
-  padding: 0.25rem 0.625rem;
+  font-weight: 400;
+  padding: 0.3125rem 0.625rem;
   background: var(--tag-bg);
   border: 1px solid var(--border);
   border-radius: 3px;
   color: var(--text-secondary);
   cursor: pointer;
   transition: all 0.15s;
+  line-height: 1;
 }
 .filter-tag-btn:hover {
   border-color: var(--accent);
   color: var(--accent);
 }
 .filter-tag-btn.active {
+  font-weight: 700;
   background: var(--accent);
   border-color: var(--accent);
   color: #fff;
@@ -530,6 +532,7 @@ img { max-width: 100%; height: auto; }
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex-shrink: 0;
 }
 .date-input {
   font-size: 0.8125rem;
@@ -549,6 +552,103 @@ img { max-width: 100%; height: auto; }
   font-size: 0.8125rem;
 }
 
+/* === Search with Tag Pills === */
+.search-tag-input {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: 0.375rem 0.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  transition: border-color 0.15s;
+  min-height: 2.375rem;
+}
+.search-tag-input:focus-within {
+  border-color: var(--accent);
+}
+.search-tag-input input {
+  flex: 1;
+  min-width: 120px;
+  border: none;
+  outline: none;
+  font-size: 0.9375rem;
+  font-family: var(--font-sans);
+  background: transparent;
+  color: var(--text);
+  padding: 0.125rem 0;
+}
+.search-tag-input input::placeholder {
+  color: var(--text-muted);
+}
+.selected-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  align-items: center;
+}
+.selected-tag-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  padding: 0.1875rem 0.25rem 0.1875rem 0.5rem;
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-radius: 3px;
+  line-height: 1;
+  animation: pill-in 0.15s ease-out;
+}
+@keyframes pill-in {
+  from { opacity: 0; transform: scale(0.85); }
+  to { opacity: 1; transform: scale(1); }
+}
+.tag-remove {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1rem;
+  height: 1rem;
+  border: none;
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 0.875rem;
+  line-height: 1;
+  border-radius: 2px;
+  padding: 0;
+  opacity: 0.6;
+  transition: opacity 0.1s, background 0.1s;
+}
+.tag-remove:hover {
+  opacity: 1;
+  background: var(--accent);
+  color: #fff;
+}
+.clear-all-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 0.8125rem;
+  border-radius: 3px;
+  padding: 0;
+  flex-shrink: 0;
+  transition: color 0.15s, background 0.15s;
+}
+.clear-all-btn:hover {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
 /* === Footer === */
 .footer {
   border-top: 1px solid var(--border);
@@ -562,6 +662,57 @@ img { max-width: 100%; height: auto; }
   color: var(--text-muted);
 }
 
+/* === Page Load Animations === */
+.animate-in {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: fade-slide-in 0.35s ease-out forwards;
+}
+@keyframes fade-slide-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Staggered delays set via JS animationDelay */
+.post-card.animate-in {
+  animation-duration: 0.3s;
+}
+
+/* Animate sections on home page */
+.home-section,
+.home-featured,
+.hero {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: fade-slide-in 0.4s ease-out forwards;
+}
+.home-featured { animation-delay: 0.1s; }
+.home-section:nth-child(3) { animation-delay: 0.15s; }
+.home-section:nth-child(4) { animation-delay: 0.2s; }
+.home-section:nth-child(5) { animation-delay: 0.25s; }
+.home-section:nth-child(6) { animation-delay: 0.3s; }
+.home-section:nth-child(7) { animation-delay: 0.35s; }
+
+/* Featured card stagger */
+.featured-card {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fade-slide-in 0.3s ease-out forwards;
+}
+.featured-card:nth-child(1) { animation-delay: 0.15s; }
+.featured-card:nth-child(2) { animation-delay: 0.2s; }
+.featured-card:nth-child(3) { animation-delay: 0.25s; }
+.featured-card:nth-child(4) { animation-delay: 0.3s; }
+.featured-card:nth-child(5) { animation-delay: 0.35s; }
+
+/* Filter bar fade in */
+.filter-bar {
+  opacity: 0;
+  animation: fade-slide-in 0.3s ease-out 0.05s forwards;
+}
+
 /* === Responsive === */
 @media (max-width: 768px) {
   .nav-links { gap: 1rem; }
@@ -569,6 +720,8 @@ img { max-width: 100%; height: auto; }
   .hero-title { font-size: 1.875rem; }
   .post-title { font-size: 1.5rem; }
   .main { padding: 1.25rem 1rem; }
+  .list-header-row { flex-direction: column; align-items: flex-start; }
+  .filter-date { align-self: flex-end; }
 }
 
 @media (max-width: 640px) {
