@@ -4,14 +4,34 @@
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
   </header>
-  <div class="search-box">
-    <input type="text" id="search-input" placeholder="{{ if eq .Lang "en" }}Search articles...{{ else }}搜索文章...{{ end }}" />
+
+  <!-- Filter Bar -->
+  <div class="filter-bar">
+    <div class="filter-search">
+      <input type="text" id="search-input" placeholder="{{ if eq .Lang "en" }}Search articles...{{ else }}搜索文章...{{ end }}" />
+    </div>
+    <div class="filter-controls">
+      <div class="filter-tags" id="filter-tags">
+        <button class="filter-tag-btn active" data-tag="all">{{ if eq .Lang "en" }}All{{ else }}全部{{ end }}</button>
+        {{ $tags := slice }}
+        {{ range .Pages }}{{ range .Params.tags }}{{ $tags = $tags | append . }}{{ end }}{{ end }}
+        {{ range ($tags | uniq) }}
+        <button class="filter-tag-btn" data-tag="{{ . }}">{{ . }}</button>
+        {{ end }}
+      </div>
+      <div class="filter-date">
+        <input type="date" id="filter-date-from" class="date-input" title="{{ if eq .Lang "en" }}From date{{ else }}起始日期{{ end }}" />
+        <span class="date-sep">–</span>
+        <input type="date" id="filter-date-to" class="date-input" title="{{ if eq .Lang "en" }}To date{{ else }}截止日期{{ end }}" />
+      </div>
+    </div>
   </div>
-  <div class="post-list">
+
+  <div class="post-list" id="post-list">
     {{ range .Pages }}
-    <article class="post-card">
+    <article class="post-card" data-tags="{{ delimit .Params.tags "," }}" data-date="{{ .Date.Format "2006-01-02" }}">
       <div class="post-card-meta">
-        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+        <time datetime="{{ .Date.Format "2006-01-02T15:04" }}">{{ .Date.Format "2006-01-02 15:04" }}</time>
         {{ with .Params.category }}<span class="post-category">{{ . }}</span>{{ end }}
       </div>
       <h2 class="post-card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
@@ -19,7 +39,7 @@
       {{ with .Params.valuation }}<span class="valuation-badge valuation-{{ . }}">{{ . }}</span>{{ end }}
       {{ with .Params.tags }}
       <div class="post-card-tags">
-        {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
+        {{ range . }}<span class="tag" data-tag="{{ . }}">{{ . }}</span>{{ end }}
       </div>
       {{ end }}
     </article>
@@ -27,4 +47,52 @@
   </div>
   <div id="search-results" class="post-list" style="display:none;"></div>
 </div>
+
+<script>
+(function() {
+  const tagBtns = document.querySelectorAll('.filter-tag-btn');
+  const dateFrom = document.getElementById('filter-date-from');
+  const dateTo = document.getElementById('filter-date-to');
+  const cards = document.querySelectorAll('#post-list .post-card');
+  let activeTag = 'all';
+
+  function applyFilters() {
+    cards.forEach(card => {
+      const cardTags = (card.dataset.tags || '').split(',');
+      const cardDate = card.dataset.date;
+
+      let tagMatch = activeTag === 'all' || cardTags.includes(activeTag);
+      let dateMatch = true;
+      if (dateFrom.value) dateMatch = dateMatch && cardDate >= dateFrom.value;
+      if (dateTo.value) dateMatch = dateMatch && cardDate <= dateTo.value;
+
+      card.style.display = (tagMatch && dateMatch) ? '' : 'none';
+    });
+  }
+
+  tagBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tagBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeTag = btn.dataset.tag;
+      applyFilters();
+    });
+  });
+
+  dateFrom.addEventListener('change', applyFilters);
+  dateTo.addEventListener('change', applyFilters);
+
+  // Clickable tags in cards
+  document.querySelectorAll('#post-list .tag[data-tag]').forEach(tag => {
+    tag.style.cursor = 'pointer';
+    tag.addEventListener('click', () => {
+      activeTag = tag.dataset.tag;
+      tagBtns.forEach(b => {
+        b.classList.toggle('active', b.dataset.tag === activeTag);
+      });
+      applyFilters();
+    });
+  });
+})();
+</script>
 {{ end }}

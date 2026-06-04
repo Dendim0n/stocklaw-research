@@ -416,6 +416,70 @@ img { max-width: 100%; height: auto; }
   color: var(--text-secondary);
 }
 
+/* === Filter Bar === */
+.filter-bar {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+.filter-search {
+  margin-bottom: 1rem;
+}
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+.filter-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  flex: 1;
+}
+.filter-tag-btn {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  padding: 0.25rem 0.625rem;
+  background: var(--tag-bg);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.filter-tag-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.filter-tag-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.filter-date {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.date-input {
+  font-size: 0.8125rem;
+  font-family: var(--font-mono);
+  padding: 0.25rem 0.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  color: var(--text);
+  outline: none;
+}
+.date-input:focus {
+  border-color: var(--accent);
+}
+.date-sep {
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
 /* === Footer === */
 .footer {
   border-top: 1px solid var(--border);

@@ -20,7 +20,7 @@
       <div class="featured-card">
         <div class="featured-card-meta">
           <span class="featured-category">{{ if eq $cat "news" }}新闻{{ else if eq $cat "signals" }}信号{{ else if eq $cat "research" }}研究{{ else if eq $cat "analysis" }}分析{{ else }}评论{{ end }}</span>
-          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "01-02" }}</time>
+          <time datetime="{{ .Date.Format "2006-01-02T15:04" }}">{{ .Date.Format "01-02 15:04" }}</time>
         </div>
         <h3 class="featured-card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
         {{ with .Params.description }}<p class="featured-card-desc">{{ . }}</p>{{ end }}
@@ -36,7 +36,7 @@
       {{ range first 3 (where .Site.RegularPages "Section" "news") }}
       <article class="post-card">
         <div class="post-card-meta">
-          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02 15:04" }}</time>
+          <time datetime="{{ .Date.Format "2006-01-02T15:04" }}">{{ .Date.Format "2006-01-02 15:04" }}</time>
         </div>
         <h3 class="post-card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
         {{ with .Params.description }}<p class="post-card-desc">{{ . }}</p>{{ end }}
@@ -51,7 +51,7 @@
       {{ range first 3 (where .Site.RegularPages "Section" "signals") }}
       <article class="post-card">
         <div class="post-card-meta">
-          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+          <time datetime="{{ .Date.Format "2006-01-02T15:04" }}">{{ .Date.Format "2006-01-02 15:04" }}</time>
         </div>
         <h3 class="post-card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
         {{ with .Params.description }}<p class="post-card-desc">{{ . }}</p>{{ end }}
@@ -66,7 +66,7 @@
       {{ range first 3 (where .Site.RegularPages "Section" "research") }}
       <article class="post-card">
         <div class="post-card-meta">
-          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+          <time datetime="{{ .Date.Format "2006-01-02T15:04" }}">{{ .Date.Format "2006-01-02 15:04" }}</time>
           {{ with .Params.category }}<span class="post-category">{{ . }}</span>{{ end }}
         </div>
         <h3 class="post-card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
@@ -82,7 +82,7 @@
       {{ range first 3 (where .Site.RegularPages "Section" "analysis") }}
       <article class="post-card">
         <div class="post-card-meta">
-          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+          <time datetime="{{ .Date.Format "2006-01-02T15:04" }}">{{ .Date.Format "2006-01-02 15:04" }}</time>
           {{ with .Params.category }}<span class="post-category">{{ . }}</span>{{ end }}
         </div>
         <h3 class="post-card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
@@ -99,7 +99,7 @@
       {{ range first 3 (where .Site.RegularPages "Section" "reviews") }}
       <article class="post-card">
         <div class="post-card-meta">
-          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+          <time datetime="{{ .Date.Format "2006-01-02T15:04" }}">{{ .Date.Format "2006-01-02 15:04" }}</time>
         </div>
         <h3 class="post-card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
         {{ with .Params.description }}<p class="post-card-desc">{{ . }}</p>{{ end }}
