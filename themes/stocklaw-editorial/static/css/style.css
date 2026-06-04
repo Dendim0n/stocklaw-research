@@ -261,10 +261,9 @@ img { max-width: 100%; height: auto; }
 
 /* === Post Layout (with TOC sidebar) === */
 .post-layout {
-  display: flex;
-  gap: 3rem;
-  max-width: calc(var(--content-width) + 220px + 3rem);
+  max-width: var(--content-width);
   margin: 0 auto;
+  position: relative;
 }
 
 /* === TOC Sidebar === */
@@ -275,10 +274,9 @@ img { max-width: 100%; height: auto; }
   .toc-sidebar {
     display: block;
     width: 200px;
-    flex-shrink: 0;
-    position: sticky;
+    position: fixed;
+    left: max(1rem, calc(50% - var(--content-width) / 2 - 200px - 2rem));
     top: 80px;
-    align-self: flex-start;
     max-height: calc(100vh - 100px);
     overflow-y: auto;
   }
