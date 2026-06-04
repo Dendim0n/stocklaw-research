@@ -29,7 +29,7 @@
 
   <div class="post-list" id="post-list">
     {{ range .Pages }}
-    <article class="post-card" data-tags="{{ delimit .Params.tags "," }}" data-date="{{ .Date.Format "2006-01-02" }}">
+    <article class="post-card" data-tags="{{ with .Params.tags }}{{ delimit . "," }}{{ end }}" data-date="{{ .Date.Format "2006-01-02" }}">
       <div class="post-card-meta">
         <time datetime="{{ .Date.Format "2006-01-02T15:04" }}">{{ .Date.Format "2006-01-02 15:04" }}</time>
         {{ with .Params.category }}<span class="post-category">{{ . }}</span>{{ end }}
