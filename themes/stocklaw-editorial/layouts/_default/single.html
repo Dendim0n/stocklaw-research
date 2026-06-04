@@ -76,16 +76,8 @@
     if (current) current.link.classList.add('active');
   }
 
-  // Show/hide TOC based on scroll position
-  const post = document.querySelector('.post');
-  function updateVisibility() {
-    const rect = post.getBoundingClientRect();
-    toc.style.display = rect.top < 0 ? '' : 'none';
-  }
-
-  window.addEventListener('scroll', () => { updateActive(); updateVisibility(); }, { passive: true });
+  window.addEventListener('scroll', updateActive, { passive: true });
   updateActive();
-  updateVisibility();
 })();
 </script>
 {{ end }}

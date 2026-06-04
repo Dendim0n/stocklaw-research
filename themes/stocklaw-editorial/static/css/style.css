@@ -268,7 +268,7 @@ img { max-width: 100%; height: auto; }
 
 /* === TOC Sidebar === */
 .toc-sidebar {
-  display: none; /* hidden on mobile */
+  display: none;
 }
 @media (min-width: 1200px) {
   .toc-sidebar {
