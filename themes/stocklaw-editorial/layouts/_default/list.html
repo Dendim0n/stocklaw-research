@@ -35,7 +35,7 @@
     {{ range .Pages }}
     <article class="post-card animate-in" data-tags="{{ with .Params.tags }}{{ delimit . "," }}{{ end }}" data-date="{{ .Date.Format "2006-01-02" }}">
       <div class="post-card-meta">
-        <time datetime="{{ .Date.Format "2006-01-02T15:04" }}">{{ .Date.Format "2006-01-02 15:04" }}</time>
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
         {{ with .Params.category }}<span class="post-category">{{ . }}</span>{{ end }}
       </div>
       <h2 class="post-card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>

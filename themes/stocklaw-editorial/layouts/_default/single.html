@@ -13,7 +13,7 @@
   <article class="post">
     <header class="post-header">
       <div class="post-meta">
-        <time datetime="{{ .Date.Format "2006-01-02T15:04" }}">{{ .Date.Format "2006-01-02 15:04" }}</time>
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
         {{ with .Params.category }}
           <span class="post-category">{{ . }}</span>
         {{ end }}
@@ -76,8 +76,23 @@
     if (current) current.link.classList.add('active');
   }
 
-  window.addEventListener('scroll', updateActive, { passive: true });
+  // Prevent TOC from overlapping footer
+  const footer = document.querySelector('.footer');
+  function updateTocBounds() {
+    if (!footer) return;
+    const footerTop = footer.getBoundingClientRect().top;
+    const viewportH = window.innerHeight;
+    if (footerTop < viewportH) {
+      const overlap = viewportH - footerTop + 16;
+      toc.style.maxHeight = `calc(100vh - 100px - ${overlap}px)`;
+    } else {
+      toc.style.maxHeight = '';
+    }
+  }
+
+  window.addEventListener('scroll', () => { updateActive(); updateTocBounds(); }, { passive: true });
   updateActive();
+  updateTocBounds();
 })();
 </script>
 {{ end }}
