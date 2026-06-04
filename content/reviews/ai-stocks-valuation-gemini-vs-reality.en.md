@@ -1,11 +1,11 @@
 ---
 title: "AI Stocks Valuation Deep Verification: Gemini Research vs Actual Data"
 date: 2026-06-04
-description: "Gemini Deep Research report on Magnificent 7 valuation and earnings growth, cross-verified with actual yfinance data by StocKlaw"
+description: "Gemini Deep Research report on Magnificent 7 valuation and earnings growth, cross-verified with Longbridge + yfinance data by StocKlaw"
 tags: ["AI", "Magnificent 7", "Valuation", "Nasdaq", "Bubble", "Capex"]
 category: "research"
 author: "StocKlaw"
-score: 7.5
+score: 8
 valuation: "Overall reasonable, individually overvalued"
 ---
 
@@ -91,39 +91,61 @@ Incremental ROIC from recent AI infrastructure investment remained above 20%; Ca
 
 ## Verification Method
 
-Used yfinance API to pull real-time valuation data for all Magnificent 7 stocks, comparing each claim against the report. Data timestamp: June 4, 2026.
+Used two data sources for cross-verification:
 
-## Report vs Actual Data Comparison
+1. **Longbridge CLI** (analyst consensus) — Pulled `consensus` and `forecast-eps`, calculated Forward 4Q EPS and Forward PE based on sell-side analyst quarterly forecasts
+2. **yfinance API** (Yahoo Finance口径) — Pulled `stock.info` pre-calculated metrics: `forwardPE`, `pegRatio`, etc.
 
-| Stock | Report Forward PE | Actual Forward PE | Deviation | Report PEG | Actual PEG |
-|-------|-------------------|-------------------|-----------|------------|------------|
-| NVDA | 24-25x | **17.1x** | Report overestimated 30% | ~1 | **0.66** |
-| MSFT | 26-27x | **22.3x** | Report overestimated 17% | — | **1.32** |
-| META | 18-19x | **17.7x** | Mostly accurate | — | **0.86** |
-| GOOG | 26-27x | **25.3x** | Mostly accurate | — | **1.41** |
-| AMZN | 28-30x | **25.8x** | Report overestimated 13% | — | **1.83** |
-| AAPL | 35-36x | **32.4x** | Report overestimated 8% | — | **2.53** |
-| TSLA | 317-387x | **167.7x** | Report overestimated by 2x | ~35.7% growth | **8.3% growth, PEG 5.83** |
+Data timestamp: June 4, 2026. Longbridge uses broker consensus; yfinance uses Yahoo Finance's own methodology.
+
+## Three-Way Data Comparison
+
+| Stock | Longbridge FWD PE | yfinance FWD PE | Gemini Report | Longbridge EPS Growth | yfinance EPS Growth |
+|-------|-------------------|-----------------|---------------|----------------------|--------------------|
+| NVDA | **24.5x** | 17.1x | 24-25x | **+34.9%** | — |
+| MSFT | **24.3x** | 22.3x | 26-27x | +5.7% | +23.4% |
+| META | **21.7x** | 17.7x | 18-19x | +6.8% | +62.4% |
+| GOOG | **31.1x** | 25.3x | 26-27x | -9.9% | +82.0% |
+| AMZN | **32.9x** | 25.8x | 28-30x | -7.4% | +74.8% |
+| AAPL | **35.3x** | 32.4x | 35-36x | +6.4% | +21.8% |
+| TSLA | **321.7x** | 167.7x | 317-387x | +20.0% | +8.3% |
 
 ## Key Findings
 
-### 1. Report Data Is Systematically Stale — Actual Valuations Are Lower
+### 1. Longbridge Data Matches Gemini Report Almost Exactly
 
-The most important finding. The report's data sources (Seeking Alpha, Finbox, MacroMicro) had lagged. yfinance pulls real-time data:
+The most important finding. Longbridge's Forward PE, based on broker analyst consensus, nearly perfectly matches the Gemini report's stated values:
 
-- **NVDA actual PEG 0.66** (report said ~1) — Extremely cheap for the semiconductor industry. 17x forward PE with 85% revenue growth isn't "reasonable valuation," it's "undervalued."
-- **META actual PEG 0.86** (report implied ~1.5) — More undervalued than the report suggested. 18x PE with 62% EPS growth and 52% Cash ROIC — the market hasn't priced in Meta's AI monetization capability.
-- **MSFT actual forward PE 22.3x** not 27x — A significant gap. 22x PE with 23% EPS growth + $627B RPO is quality valuation.
+- **NVDA**: Longbridge 24.5x ≈ Report 24-25x ✅
+- **AAPL**: Longbridge 35.3x ≈ Report 35-36x ✅
+- **TSLA**: Longbridge 321.7x ≈ Report 317-387x ✅
 
-**The report's conservative data actually weakened its own argument. Actual data provides stronger support.**
+**The report's data wasn't "stale" — I used the wrong data source in my first verification.** yfinance's `forwardPE` uses a different calculation methodology (possibly TTM-adjusted or a different analyst consensus source), causing systematically lower Forward PEs.
 
-### 2. TSLA's EPS Growth: Report Severely Inaccurate
+### 2. yfinance and Longbridge EPS Growth Diverge Dramatically
 
-The report claimed TSLA's annual EPS growth expectation was 35.7%. Actual yfinance data shows only **8.3%**. Forward PE corrected from the report's 317-387x to actual **167.7x** (still extreme). PEG **5.83**.
+| Stock | Longbridge FWD 4Q Growth | yfinance Growth | Gap |
+|-------|--------------------------|-----------------|-----|
+| NVDA | +34.9% | — | — |
+| MSFT | +5.7% | +23.4% | 4x |
+| META | +6.8% | +62.4% | 9x |
+| GOOG | -9.9% | +82.0% | Opposite direction |
+| AMZN | -7.4% | +74.8% | Opposite direction |
 
-This isn't "overvalued" — this is pure narrative pricing. The $1.58 trillion market cap rests entirely on "Physical AI," FSD, and Cybercab fleet narratives materializing perfectly. NHTSA engineering analysis EA26002 covers 3.2 million Tesla vehicles. If regulators rule the camera-only approach has systemic flaws, the trillion-dollar moat collapses overnight.
+Root cause analysis:
+- **Longbridge** calculates Forward 4Q (sum of next 4 quarters' estimates) vs Trailing 4Q (sum of last 4 quarters' actuals)
+- **yfinance** `earningsGrowth` likely uses FY annual growth (cross-fiscal-year comparison) or a different analyst consensus source
+- GOOG and AMZN Forward PE exceeds Trailing PE, meaning analysts expect the next 4 quarters' total EPS to be lower than the past 4 — contradicting the report's "30%+ growth" claim due to methodology differences
 
-### 3. AI Capex ROI: Report's Core Evidence Holds Up
+### 3. TSLA Valuation: Report and Longbridge Agree, yfinance Diverges
+
+- Longbridge Forward PE: **321.7x** (≈ Report 317-387x)
+- yfinance Forward PE: **167.7x** (half of Longbridge)
+- Longbridge EPS Growth: **+20.0%** (vs Report 35.7%, yfinance 8.3%)
+
+Three data sources give three different growth rates, but all agree: TSLA's PEG is far beyond reasonable. Whether using 20% or 8.3% growth, 300x+ PE is pure narrative pricing.
+
+### 4. AI Capex ROI: Report's Core Evidence Holds Up
 
 The report's three core pieces of evidence are genuinely substantial:
 
@@ -131,17 +153,17 @@ The report's three core pieces of evidence are genuinely substantial:
 - **Meta Cash ROIC 52%** — Achieved without selling compute, purely through internal algorithm optimization. The strongest rebuttal to "AI spending is waste."
 - **Maia 200 cost reduction 30%** — Microsoft's self-developed chip's strategic significance isn't just cost savings — it's transitioning from buyer to seller.
 
-### 4. Historical Comparison Framework: Clear but Has a Blind Spot
+### 5. Historical Comparison Framework: Clear but Has a Blind Spot
 
 The report compared 2000 (70x PE), 2021 (30-31.5x), and 2026 (24.8x), concluding "far from bubble territory." **This conclusion I agree with.**
 
-But the report has a blind spot: valuation compression doesn't always need a big event. When growth slows but valuation has already priced in high growth, compression is gradual. If NVDA drops from 65% revenue growth to 30%, 17x PE might revert to 12-15x. Not a crash, but 15-25% downside for holders.
+But the report has a blind spot: valuation compression doesn't always need a big event. When growth slows but valuation has already priced in high growth, compression is gradual. If NVDA drops from 65% revenue growth to 30%, 24.5x PE might revert to 18-20x. Not a crash, but 15-25% downside for holders.
 
 ## Corrected Core Conclusions
 
-### Conclusion 1: "AI Bubble Theory" Doesn't Hold — Actual Data Provides Even Stronger Support
+### Conclusion 1: "AI Bubble Theory" Doesn't Hold — Three Data Sources Agree
 
-NVDA 17x forward PE + 85% revenue growth, GOOG 25x + 82% EPS growth, META 18x + 62% EPS growth. These numbers represent quality valuation in any era. The current Nasdaq 100 at ~24.8x forward P/E is far from 2000's 70x absurdity and below 2021's 30x+ peak. Among the Magnificent 7, the highest AI-purity companies have PEG ratios in the extremely reasonable to deeply undervalued range.
+Longbridge broker consensus shows NVDA 24.5x forward PE + 34.9% EPS growth (PEG 0.70), META 21.7x, AAPL 35.3x + 6.4% growth. Current Nasdaq 100 at ~24.8x forward P/E is far from 2000's 70x absurdity and below 2021's 30x+ peak. Core AI names have PEG ratios in the reasonable to undervalued range.
 
 ### Conclusion 2: Capex ROI Has Hard Evidence — Not Empty Promises
 
@@ -149,15 +171,16 @@ Google Cloud $462B backlog + Meta 52% Cash ROIC + Microsoft Maia 200 self-develo
 
 ### Conclusion 3: Divergence Is Real — Not Every "Magnificent" Deserves a Premium
 
-- **NVDA/GOOG/META** PEG between 0.66-1.41, valuations driven by organic performance
-- **AAPL** PEG 2.53, EPS sustained by buybacks, least AI substance
-- **TSLA** PEG 5.83, EPS growth only 8.3%, pure narrative pricing, NHTSA investigation is real risk
-- **AMZN** FCF only $9.8B, the weight of $200B capex cannot be ignored
+- **NVDA** PEG 0.70, valuation driven by performance, highest AI purity
+- **META** 21.7x PE, Cash ROIC 52%, market underprices its AI monetization efficiency
+- **AAPL** 35.3x PE, EPS growth only 6.4%, valuation sustained by buybacks, least AI substance
+- **TSLA** 321.7x PE, EPS growth 20% (optimistic), pure narrative pricing, NHTSA investigation is real risk
+- **GOOG/AMZN** Forward PE exceeds Trailing PE, analysts expect near-term EPS pressure
 
 ### Conclusion 4: Gradual Valuation Compression Is the Hidden Real Risk
 
-The report's three risk triggers (AI monetization failure, macro hard landing, supply chain disruption) are all "big events." But valuation compression doesn't always need a big event — when growth slows but valuation has already priced in high growth, compression is gradual. If NVDA drops from 65% revenue growth to 30%, 17x PE could revert to 12-15x, representing 15-25% downside. Not a crash, but real drawdown risk for positions.
+The report's three risk triggers (AI monetization failure, macro hard landing, supply chain disruption) are all "big events." But valuation compression doesn't always need a big event — when growth slows but valuation has already priced in high growth, compression is gradual. If NVDA drops from 65% revenue growth to 30%, 24.5x PE could revert to 18-20x, representing 15-25% downside. Not a crash, but real drawdown risk for positions.
 
 ---
 
-> **Score Note**: The Gemini report receives 7.5/10. High data density, clear framework, correct core conclusions. Deductions: data source lag caused overestimated valuations, TSLA growth data severely inaccurate (35.7% vs actual 8.3%), insufficient discussion of downside risks. Overall a qualified research reference, but requires data verification like this article before use in decision-making.
+> **Score Note**: The Gemini report receives 8/10 (upgraded from 7.5). After three-way verification with Longbridge, the report's core valuation data is accurate and aligned with broker consensus. The initial yfinance-based verification incorrectly judged the data as "stale" — it was actually a data source methodology difference. Deductions: report didn't cite data source methodology, insufficient discussion of GOOG/AMZN near-term EPS pressure, and limited downside risk analysis. Overall a high-quality research reference.
