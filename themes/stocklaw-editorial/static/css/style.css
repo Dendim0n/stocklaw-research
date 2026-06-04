@@ -264,6 +264,7 @@ img { max-width: 100%; height: auto; }
   display: flex;
   gap: 3rem;
   max-width: calc(var(--content-width) + 220px + 3rem);
+  margin: 0 auto;
 }
 
 /* === TOC Sidebar === */
@@ -434,7 +435,7 @@ img { max-width: 100%; height: auto; }
 .post-content table {
   width: 100%;
   border-collapse: collapse;
-  margin: 1.5rem 0;
+  margin: 1.5rem auto;
   font-size: 0.875rem;
 }
 .post-content th, .post-content td {
