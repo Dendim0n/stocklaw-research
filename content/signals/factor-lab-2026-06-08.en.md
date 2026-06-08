@@ -4,7 +4,6 @@ description: "Momentum dominates (IC=0.224, ICIR 2.70); reversal signals strengt
 date: 2026-06-08
 ---
 
-# Factor Lab Daily Brief 2026-06-08
 
 > Data date: 2026-06-08 06:35 CST | Holding period: 21 trading days | Universe: S&P 500 constituents
 

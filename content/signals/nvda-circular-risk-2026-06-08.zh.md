@@ -6,7 +6,6 @@ tags: ["NVIDIA", "循环融资", "风险监控", "AI", "OpenAI"]
 category: "signals"
 ---
 
-# 【每周一】NVIDIA 循环融资风险监控 | 2026-06-08
 
 ## 本周核心变化
 

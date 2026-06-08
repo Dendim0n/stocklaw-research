@@ -4,7 +4,6 @@ description: "Momentum ICIR +2.70 dominates; IT sector extreme dispersion; value
 date: 2026-06-07
 ---
 
-# Factor Lab Daily Brief — 2026-06-07
 
 ## Full Factor IC Test
 
