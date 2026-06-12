@@ -4,8 +4,6 @@ description: "Momentum ICIR=2.70 leads all factors; value factors fully reversed
 date: 2026-06-12
 ---
 
-# Factor Lab Daily Brief 2026-06-12
-
 ## 📊 Factor IC Overview
 
 | Factor | IC Mean | ICIR | T-stat | p-value | IC Positive % | Long-Short (L/S) |

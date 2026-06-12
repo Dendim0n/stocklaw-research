@@ -4,8 +4,6 @@ description: "Momentum ICIR +2.70 leads; Healthcare momentum reversal; BP factor
 date: 2026-06-11
 ---
 
-# Factor Lab Daily Brief 2026-06-11
-
 ## Single-Factor Test Summary (S&P 500, 21-day holding, 39 cross-sections)
 
 | Factor | IC Mean | ICIR | t-stat | p-value | IC+% | Long-Short |
