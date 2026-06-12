@@ -25,6 +25,9 @@ date: 2026-06-11
 3. **bp 因子不显著**（p=0.635），账面市值比在当前市场环境中几乎无预测力
 4. **波动率（vol）正向IC** — 高波动股票跑赢低波动，风险偏好回升
 
+
+![Factor IC](/charts/factor-ic-2026-06-11.png)
+
 ## 二、行业动量分解
 
 | 行业 | IC均值 | ICIR | 多空收益 | 单调性 |
@@ -56,5 +59,5 @@ date: 2026-06-11
 
 ---
 
-![Factor IC](/charts/factor-ic-2026-06-11.png)
+
 ![Sector Momentum](/charts/sector-mom-2026-06-11.png)

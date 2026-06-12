@@ -29,6 +29,9 @@ date: 2026-06-07
 
 5. **异常检测**：所有因子均在正常波动范围内，无极端异常。
 
+
+![Factor IC](/charts/factor-ic-2026-06-07.png)
+
 ## 行业动量分解
 
 | 行业 | IC均值 | ICIR | 多空收益 | 单调性 |
@@ -51,5 +54,5 @@ date: 2026-06-07
 
 ---
 
-![Factor IC](/charts/factor-ic-2026-06-07.png)
+
 ![Sector Momentum](/charts/sector-mom-2026-06-07.png)

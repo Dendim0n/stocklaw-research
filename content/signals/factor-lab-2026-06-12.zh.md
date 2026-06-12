@@ -27,6 +27,9 @@ date: 2026-06-12
 
 ---
 
+
+![Factor IC](/charts/factor-ic-2026-06-12.png)
+
 ## 🏭 行业动量分解
 
 | 行业 | IC均值 | ICIR | IC正占比 | L/S收益 | Q5收益 |
@@ -57,5 +60,5 @@ date: 2026-06-12
 
 ⚠️ 风险提示：动量因子ICIR=2.70处于历史高位，需警惕拥挤度风险。当动量因子过于拥挤时，一次均值回归可能带来剧烈回撤。
 
-![Factor IC](/charts/factor-ic-2026-06-12.png)
+
 ![Sector Momentum](/charts/sector-mom-2026-06-12.png)

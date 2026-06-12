@@ -40,6 +40,9 @@ Momentum ICIR at **2.70** — the most predictive factor with 100% positive IC. 
 
 ICIR=1.25, positive IC 87.2%, large caps (Q5=4.51%) significantly outperforming small caps (Q1=2.45%). Opposite to traditional "small-cap premium" — current environment favors large-cap defensives.
 
+
+![Factor IC](/charts/factor-ic-2026-06-10.png)
+
 ## Sector Momentum Decomposition
 
 | Sector | IC Mean | ICIR | Q5 Ret | Long-Short | Signal |
@@ -62,5 +65,5 @@ ICIR=1.25, positive IC 87.2%, large caps (Q5=4.51%) significantly outperforming 
 3. **Value Factors on Hold**: FCF/ROE persistently negative IC — value investors need patience
 4. **Large-Cap Preference**: Size ICIR=1.25 with clear direction — large caps more resilient in current environment
 
-![Factor IC](/charts/factor-ic-2026-06-10.png)
+
 ![Sector Momentum](/charts/sector-mom-2026-06-10.png)

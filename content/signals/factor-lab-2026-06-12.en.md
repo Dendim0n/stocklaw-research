@@ -27,6 +27,9 @@ date: 2026-06-12
 
 ---
 
+
+![Factor IC](/charts/factor-ic-2026-06-12.png)
+
 ## 🏭 Sector Momentum Decomposition
 
 | Sector | IC Mean | ICIR | IC Positive % | L/S Return | Q5 Return |
@@ -57,5 +60,5 @@ The factor regime is **extreme momentum + extreme growth**:
 
 ⚠️ Risk Note: Momentum ICIR=2.70 is historically elevated. Crowding risk is real — when momentum becomes this consensus, a single mean-reversion event can trigger sharp drawdowns.
 
-![Factor IC](/charts/factor-ic-2026-06-12.png)
+
 ![Sector Momentum](/charts/sector-mom-2026-06-12.png)

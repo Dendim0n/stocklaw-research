@@ -24,6 +24,9 @@ date: 2026-06-09
 - **Value cluster** (EP, FCF Yield, ROE) shows negative IC with positive L/S — low-valuation stocks outperforming. Defensive signal.
 - **BP** the only insignificant factor, p=0.635.
 
+
+![Factor IC](/charts/factor-ic-2026-06-09.png)
+
 ## 2. Momentum by Sector
 
 | Sector | IC Mean | ICIR | L/S Return | Signal |
@@ -53,5 +56,5 @@ date: 2026-06-09
 3. **Healthcare** is the only sector with reverse momentum — natural hedge.
 4. **Watch for crowding**: When every sector shows monotonic "momentum wins," the crowded trade is likely at its peak.
 
-![Factor IC](/charts/factor-ic-2026-06-09.png)
+
 ![Sector Momentum](/charts/sector-mom-2026-06-09.png)

@@ -23,6 +23,9 @@ date: 2026-06-11
 3. **BP factor insignificant** (p=0.635), book-to-price ratio has no predictive power in current market
 4. **Volatility factor shows positive IC** — high-vol stocks outperform low-vol, suggesting risk appetite recovery
 
+
+![Factor IC](/charts/factor-ic-2026-06-11.png)
+
 ## Sector Momentum Decomposition
 
 | Sector | IC Mean | ICIR | Long-Short | Monotone |
@@ -51,5 +54,5 @@ date: 2026-06-11
 
 ---
 
-![Factor IC](/charts/factor-ic-2026-06-11.png)
+
 ![Sector Momentum](/charts/sector-mom-2026-06-11.png)

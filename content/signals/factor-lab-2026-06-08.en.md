@@ -26,6 +26,9 @@ date: 2026-06-08
 - **Volatility premium**: vol factor IC 0.132, ICIR 1.05. High-vol stocks outperforming significantly, Q5 +8.15% monthly.
 - **Large-cap tilt**: size factor slightly positive, modest large-cap advantage (ICIR 1.25).
 
+
+![Factor IC](/charts/factor-ic-2026-06-08.png)
+
 ## Sector Momentum Decomposition
 
 | Sector | IC Mean | ICIR | Q1→Q5 L/S | Verdict |
@@ -58,5 +61,5 @@ No anomalies triggered. All factor ICs within historical normal ranges.
 
 ---
 
-![Factor IC](/charts/factor-ic-2026-06-08.png)
+
 ![Sector Momentum](/charts/sector-mom-2026-06-08.png)

@@ -26,6 +26,9 @@ date: 2026-06-08
 - **波动率溢价**：vol 因子 IC 0.132，ICIR 1.05，高波动股票近期显著跑赢低波动，Q5 组月均收益 +8.15%。
 - **市值因子偏大**：size 因子 IC 正值，大盘股略有优势，但信号不强（ICIR 1.25）。
 
+
+![Factor IC](/charts/factor-ic-2026-06-08.png)
+
 ## 行业动量分解
 
 | 行业 | IC 均值 | ICIR | Q1→Q5 多空 | 判断 |
@@ -58,5 +61,5 @@ date: 2026-06-08
 
 ---
 
-![Factor IC](/charts/factor-ic-2026-06-08.png)
+
 ![Sector Momentum](/charts/sector-mom-2026-06-08.png)

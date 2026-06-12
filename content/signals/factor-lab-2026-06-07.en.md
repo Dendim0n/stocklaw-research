@@ -29,6 +29,9 @@ date: 2026-06-07
 
 5. **Anomaly scan**: All factors within normal ranges — no extreme anomalies detected.
 
+
+![Factor IC](/charts/factor-ic-2026-06-07.png)
+
 ## Sector Momentum Decomposition
 
 | Sector | IC Mean | ICIR | Long-Short | Monotone |
@@ -51,5 +54,5 @@ date: 2026-06-07
 
 ---
 
-![Factor IC](/charts/factor-ic-2026-06-07.png)
+
 ![Sector Momentum](/charts/sector-mom-2026-06-07.png)
