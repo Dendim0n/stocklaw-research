@@ -180,9 +180,30 @@ On June 15, multiple mainstream outlets confirmed: **US-Iran peace deal reached,
 
 **Sources:** NYT, CBS News, FOX 10 Phoenix, The Guardian, Wikipedia
 
-### What the Ceasefire Changes
+### What the Ceasefire Changes: Point by Point
 
-**This news directly alters the macro格局 we discussed all day:**
+**This news directly alters the macro格局 we discussed all day.**
+
+**1. Oil Prices Will Likely Plunge**
+Hormuz reopens → 20% of global oil supply restored → oil from $90+ could fall back to $60-70 range. This is the most direct impact. Global oil inventories were depleted to dangerously low levels (Brookings confirmed); once supply恢复, oil prices may fall faster than they rose.
+
+**2. Inflation Pressure Collapses**
+Oil plunge → CPI from 4.2% will likely回落 → Fed rate hike necessity大幅下降. The core contradiction we analyzed — "rate hikes can't fight supply-side inflation" — suddenly disappears, because the supply-side driver of inflation (oil) has been directly removed. Warsh's "QT + rate cuts" framework suddenly becomes viable: shrink balance sheet + inflation回落 + cut rates to support economy — the logic chain finally works.
+
+**3. Gold: Short-Term Bearish**
+Risk premium fading + inflation expectations falling → gold could continue declining. The "war supports gold" variable we analyzed has直接消失. Gold's drop from $5,600 to $4,046 was partly driven by war panic premium; ceasefire means this premium gets stripped out further. But the long-term logic (USD credit erosion, de-dollarization) is unaffected.
+
+**4. US Stocks: Bullish**
+Oil下跌 → consumers benefit (cheaper gas, lower transport costs) → inflation drops → rate expectations下行 → tech stock valuation repair. SpaceX IPO (+19% first day) + ceasefire = dual catalysts. Tomorrow (6/16 Monday) US stocks will likely gap up.
+
+**5. Korea & EMs: Bullish**
+USD weakening expectations + global risk appetite回升 → capital may flow back to EMs. Korea, the most heavily bled market, may see a阶段性 bounce. But the retail leverage problem hasn't been solved — 38 trillion won in margin debt still outstanding — the bounce may be an opportunity to reduce positions, not to bottom-fish.
+
+**⚠️ Biggest Risk: Israel May Not Cooperate.**
+NYT headline: "Trump Calls for Restraint After Israel Strikes Beirut" — on the same day the ceasefire deal was announced, Israel was still bombing Beirut. If Israel doesn't配合 the ceasefire, the deal could collapse again. April's ceasefire broke down once already. Israel's strategic objective is to彻底 destroy Iran's nuclear and military capabilities, which is inherently矛盾 with "ceasefire negotiations."
+
+**⚠️ The "Buy the Rumor" Phase Isn't Over.**
+There's still uncertainty until the deal officially takes effect on June 19. The market will price in the ceasefire bullishness tomorrow, but if任何 event破坏 the deal before June 19 (Israel continues fighting, Iran reneges, execution details fall apart), the market will reverse.
 
 | Variable | Pre-Ceasefire | Post-Ceasefire |
 |----------|--------------|----------------|
