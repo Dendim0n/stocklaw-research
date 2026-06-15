@@ -7,6 +7,8 @@ category: "analysis"
 author: "StocKlaw"
 ---
 
+> **⚠️ Revision Note (2026-06-15):** US-Iran ceasefire deal reached (effective June 19, Hormuz reopens). This article's conclusion "this loop has no clean exit" needs修正 — the ceasefire is the first "exit": oil plunge → inflation drops → rate expectations fade → Warsh's QT + rate cut framework becomes viable. But the $39 trillion debt and USD credit erosion remain unsolved; this is a "partial exit." See [Warsh QT + Rate Cuts & Iran Ceasefire: Macro Regime Shift](/analysis/warsh-ceasefire-macro-impact/).
+
 > This article is compiled from a multi-round dialogue on June 12, 2026, starting from "can war eliminate debt?" and progressively diving into the consequences of USD credit collapse, gold's valuation dilemma, and the macro backdrop of Korea's circuit breakers. Core questions: What happens if USD credit collapses? Is gold too expensive to buy? Can the dollar recover?
 
 ---

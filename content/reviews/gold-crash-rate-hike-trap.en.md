@@ -10,6 +10,8 @@ score: 6.0
 valuation: "Undervalued long-term, under pressure short-term"
 ---
 
+> **⚠️ Revision Note (2026-06-15):** US-Iran ceasefire deal reached (effective June 19, Hormuz reopens). The "war supports gold" factor analyzed in this article has disappeared; gold short-term downside pressure increases. $4,000 is next support; if broken, possibly $3,800. Long-term logic (USD credit erosion, central bank buying) unchanged. See [Warsh QT + Rate Cuts & Iran Ceasefire: Macro Regime Shift](/analysis/warsh-ceasefire-macro-impact/).
+
 ## I. The Facts: How Far Has Gold Actually Fallen?
 
 **Price Timeline:**

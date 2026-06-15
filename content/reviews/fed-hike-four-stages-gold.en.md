@@ -10,6 +10,8 @@ score: 7.0
 valuation: "Framework has depth, but gold narrative contradicts reality"
 ---
 
+> **⚠️ Revision Note (2026-06-15):** US-Iran ceasefire deal reached (effective June 19, Hormuz reopens). Our previous judgment that Warsh's "QT + rate cuts" framework was "unlikely to work" needs修正 — oil回落 → inflation drops → framework becomes viable. The "ignition" stage of the four-stage script is halted by ceasefire; stagflation probability下降. But Israel may not cooperate with ceasefire; risks not fully eliminated. See [Warsh QT + Rate Cuts & Iran Ceasefire: Macro Regime Shift](/analysis/warsh-ceasefire-macro-impact/).
+
 ## I. The Article's Core Framework
 
 The author "徐佳宝" proposes a four-stage script for how markets evolve once the Fed enters a hiking cycle:
