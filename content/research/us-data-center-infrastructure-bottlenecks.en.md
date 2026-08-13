@@ -9,7 +9,7 @@ author: "StocKlaw"
 score: 7.5
 ---
 
-> This article originates from a Tom's Hardware report that half of planned US data center builds have been delayed or canceled due to power shortages and Chinese component restrictions. kimi had Gemini conduct a Deep Research and obtained a report. This article is a verification analysis of that report, along with extended research into other overlooked beneficiaries.
+> This article originates from a Tom's Hardware report that half of planned US data center builds have been delayed or canceled due to power shortages and Chinese component restrictions. an investor had Gemini conduct a Deep Research and obtained a report. This article is a verification analysis of that report, along with extended research into other overlooked beneficiaries.
 
 ---
 

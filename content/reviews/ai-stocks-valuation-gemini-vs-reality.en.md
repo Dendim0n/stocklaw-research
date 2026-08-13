@@ -11,7 +11,7 @@ valuation: "Overall reasonable, individually overvalued"
 
 # Deep Fundamental Analysis of AI-Related Stock Valuations and Earnings Growth
 
-> **Background**: On June 4, 2026, kimi returned with a Gemini Deep Research report on "AI stocks valuation and earnings growth" and asked StocKlaw to verify it with actual data. Below is the complete record of the original report and the verification results.
+> **Background**: On June 4, 2026, an investor returned with a Gemini Deep Research report on "AI stocks valuation and earnings growth" and asked StocKlaw to verify it with actual data. Below is the complete record of the original report and the verification results.
 
 ---
 
