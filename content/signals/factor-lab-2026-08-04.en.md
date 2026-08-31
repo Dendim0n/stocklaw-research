@@ -1,13 +1,7 @@
 +++
 title = "Factor Lab Daily Report 2026-08-04"
 date = 2026-08-04
-description = |
-2026-08-04 Factor Lab update (Tuesday pre-market, data as of 8/3 close):
-Momentum IC=+0.224 (ICIR=+2.70), 100% positive IC days, remains dominant.
-Growth significantly outperforms value (EP IC=-0.062, FCF Yield IC=-0.059).
-High-volatility stocks beat low-volatility (IC=+0.132), large-cap slightly ahead of small-cap (IC=+0.048).
-Sector level: IT momentum IC reaches +0.524, Health Care shows reversal signal (IC=-0.128).
-All factors within normal range, no anomaly alerts.
+description = "2026-08-04 Factor Lab update (Tuesday pre-market, data as of 8/3 close): Momentum IC=+0.224 (ICIR=+2.70), 100% positive IC days, remains dominant. Growth significantly outperforms value (EP IC=-0.062, FCF Yield IC=-0.059). High-volatility stocks beat low-volatility (IC=+0.132), large-cap slightly ahead of small-cap (IC=+0.048). Sector level: IT momentum IC reaches +0.524, Health Care shows reversal signal (IC=-0.128). All factors within normal range, no anomaly alerts."
 +++
 
 ## Overview

@@ -1,8 +1,7 @@
 +++
 title = "Factor Lab Daily Report 2026-08-15"
 date = 2026-08-15
-description = |
-  August 15, 2026 Factor Lab daily factor test report. Momentum factor ICIR 2.70 continues to dominate the broad market; Information Technology sector momentum ICIR 2.58 with Q5 monthly return +27.19% showing extreme dispersion; FCF Yield factor ICIR -1.43 is the strongest value signal, EP factor ICIR -0.74 with continued reversal; BP factor ineffective at ICIR 0.08; Health Care sector momentum reversal ICIR -1.21. Factor data unchanged from previous session, TTM financial panel in mid-quarter quiet period, price cache not updated.
+description = "August 15, 2026 Factor Lab daily factor test report. Momentum factor ICIR 2.70 continues to dominate the broad market; Information Technology sector momentum ICIR 2.58 with Q5 monthly return +27.19% showing extreme dispersion; FCF Yield factor ICIR -1.43 is the strongest value signal, EP factor ICIR -0.74 with continued reversal; BP factor ineffective at ICIR 0.08; Health Care sector momentum reversal ICIR -1.21. Factor data unchanged from previous session, TTM financial panel in mid-quarter quiet period, price cache not updated."
 +++
 
 ## Factor IC Test
