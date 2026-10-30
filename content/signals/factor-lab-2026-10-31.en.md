@@ -119,7 +119,7 @@ About 100 names are outside the sector table. **Energy and Communication Service
 
 **What carries information at the sector level is the near-term dispersion, not the full-window colours:** 6 of 7 sectors have negative last-3-section means — Information Technology -0.734, Financials -0.434, Industrials -0.352 — and only Utilities is positive (+0.094). So **the "winners keep winning" structure of sector momentum broke down across late September and early October as a whole, not in tech alone.** Meanwhile two sectors still show ICIR of 1.32–1.59 (Consumer Staples, Consumer Discretionary), but that depends on August sections remaining inside the window.
 
-One easy-to-misread detail: **Financials and Utilities have more negative near-term IC yet positive Q1−Q5 spreads**, which is consistent with negative IC (negative IC plus positive Q1−Q5 is self-consistent) and does not mean "low-momentum names make money". Their share of positive cross-sections is only 43.6% and 33.3% — i.e. most sections run the other way.
+One easy-to-misread detail: **Financials' full-window IC is only -0.048 while its last 3 sections average -0.434, yet its Q1−Q5 spread is +1.07%** — negative IC with positive Q1−Q5 is self-consistent and does not mean "low-momentum names make money"; only 43.6% of its cross-sections are positive. Utilities is the mirror case: full window -0.062 but last 3 sections +0.094 and Q1−Q5 +2.66%, with just 33.3% of sections positive (most run the other way). Neither spread is a tradable conclusion.
 
 ![Factor IC overview 2026-10-31](/charts/factor-ic-2026-10-31.png)
 
